@@ -3,7 +3,7 @@
 Theme Name: TOC
 Author: Sean Davis
 Description: WordPress Starter Theme
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: toc
@@ -9384,6 +9384,10 @@ section[class*="-section"] .section-header {
   border-radius: 8px 8px 0 0 !important;
   max-width: 920px;
   width: 100%; }
+.example-site a img {
+  transition: all .3s ease-in-out; }
+  .example-site a img:active, .example-site a img:hover, .example-site a img:focus {
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.4); }
 
 .subdued-links-white a {
   color: var(--white); }

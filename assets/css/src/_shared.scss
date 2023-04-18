@@ -77,6 +77,19 @@
 		max-width: 920px;
 		width: 100%;
 	}
+
+	a {
+
+		img {
+			transition: all .3s ease-in-out;
+
+			&:active,
+			&:hover,
+			&:focus {
+				box-shadow: 0 0 65px rgba(0,0,0,.4);
+			}
+		}
+	}
 }
 
 .subdued-links-white {
