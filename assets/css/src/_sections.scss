@@ -1,0 +1,77 @@
+section[class*="-section"] {
+
+	.section-header {
+		margin-bottom: 3rem;
+
+		.section-description {
+			color: var(--subdued-body);
+
+			p {
+
+				@media all and (min-width: 768px) {
+					font-size: 21px;
+				}
+			}
+		}
+	}
+}
+
+.page-header {
+
+	&.centered {
+		text-align: center;
+
+		.page-description {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.page-title {
+		margin-bottom: .75rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		& + p {
+
+			@media all and (min-width: 768px) {
+				font-size: 21px;
+			}
+		}
+	}
+
+	.page-description {
+		color: var(--subdued-body);
+		max-width: 768px;
+
+		@media all and (min-width: 768px) {
+			font-size: 21px;
+		}
+	}
+
+	.entry-meta {
+		margin-top: 1rem;
+	}
+}
+
+.archive {
+
+	.page-header {
+
+		.page-title {
+			color: var(--subdued-body);
+			font-size: 1rem;
+			font-weight: 700;
+			line-height: 1;
+			text-transform: uppercase;
+
+			span {
+				color: var(--body);
+				line-height: 1.2;
+				text-transform: none;
+			}
+		}
+	}
+}

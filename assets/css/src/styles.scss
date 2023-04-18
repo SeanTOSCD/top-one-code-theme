@@ -1,0 +1,45 @@
+/*!
+Theme Name: TOC
+Author: Sean Davis
+Description: WordPress Starter Theme
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: toc
+*/
+
+/* Required Bootstrap styles */
+//@import "../../../node_modules/bootstrap/scss/functions";
+//@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+
+/* Must be included before other styles */
+@import "_variables";
+@import "_mixins";
+
+/* Global styles */
+@import "_archive";
+@import "_blocks";
+@import "_comments";
+@import "_footer";
+@import "_forms";
+@import "_grid";
+@import "_header";
+@import "_navigation";
+@import "_markup-formatting";
+@import "_page-sections";
+@import "_sections";
+@import "_shared";
+@import "_sidebar";
+@import "_singular";
+@import "_structure";
+@import "_typography";
+
+/* Make sure final color adjustments come last */
+@import "_colors";
+
+/* Template styles */
+@import "templates/_front-page";
+@import "templates/_wide";

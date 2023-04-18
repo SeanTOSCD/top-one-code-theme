@@ -1,0 +1,245 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.page-title,
+.section-title,
+.archive .page-title span {
+	display: block;
+	font-weight: 700;
+	line-height: 1.4;
+	margin: 0 0 1.25rem;
+}
+
+h1, .h1,
+.page-title,
+.page-header.wp-block-group > .wp-block-group__inner-container > h1:first-child,
+.page-header.wp-block-group > .wp-block-group__inner-container > h2:first-child,
+.page-header.wp-block-group > .wp-block-group__inner-container > h3:first-child,
+.archive .page-title span {
+	font-size: 2rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 2.5rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 3rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 3.5rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 4rem;
+	}
+}
+
+h2, .h2 {
+	font-size: 1.75rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 2rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 2.5rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 3rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 3.5rem;
+	}
+}
+
+h3, .h3,
+.section-title {
+	font-size: 1.5rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 1.75rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 2rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 2.25rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 2.5rem;
+	}
+}
+
+h4, .h4 {
+	font-size: 1.25rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 1.5rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 1.75rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 2rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 2.25rem;
+	}
+}
+
+h5, .h5,
+h6, .h6 {
+	font-size: 1.25rem;
+}
+
+p {
+	margin-bottom: 1.25rem;
+
+	@media all and (min-width: 576px) {
+		margin-bottom: 1.5rem;
+	}
+
+	@media all and (min-width: 992px) {
+		margin-bottom: 1.67rem;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+ul,
+ol {
+	margin: 0 0 1.25rem 1.25rem;
+	padding-left: 1rem;
+
+	@media all and (min-width: 576px) {
+		margin-bottom: 1.5rem;
+	}
+
+	@media all and (min-width: 992px) {
+		margin-bottom: 1.67rem;
+	}
+
+	li {
+		margin-bottom: .5rem;
+
+		&::marker {
+			color: var(--subdued-body);
+		}
+
+		ul,
+		ol {
+			margin-bottom: .75rem;
+			margin-top: .75rem;
+		}
+	}
+}
+
+a {
+	color: var(--action);
+	text-decoration: underline;
+
+	&:active,
+	&:hover,
+	&:focus {
+		color: var(--action);
+		text-decoration: none;
+	}
+}
+
+iframe,
+object {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figcaption,
+.wp-caption-text {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+q {
+	font-style: italic;
+	font-weight: 500;
+}
+
+pre {
+	background-color: var(--lightest);
+	padding: 1.5rem;
+}
+
+address {
+	margin-bottom: 1.25rem;
+}
+
+table {
+	font-size: 90%;
+}
+
+.alignleft {
+
+	@media all and (min-width: 768px) {
+		float: left;
+		margin-bottom: 1rem;
+		margin-right: 1.5rem;
+	}
+}
+
+.alignright {
+
+	@media all and (min-width: 768px) {
+		float: right;
+		margin-bottom: 1rem;
+		margin-left: 1.5rem;
+	}
+}
+
+// Adjustments to markup in standard WordPress content areas (so, not custom)
+.entry-content:not(.page-sections-content),
+.comment-content {
+
+	@include heading-font-reduced;
+
+	& > [class*="wp-block-"] {
+		margin-bottom: 1.25rem;
+
+		@media all and (min-width: 576px) {
+			margin-bottom: 1.5rem;
+		}
+
+		@media all and (min-width: 992px) {
+			margin-bottom: 2rem;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	figure {
+		width: 100%;
+	}
+
+	figure,
+	img {
+		max-width: 100%;
+	}
+}

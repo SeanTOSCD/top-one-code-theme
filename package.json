@@ -1,0 +1,18 @@
+{
+  "name": "Top One Code",
+  "version": "1.0.2",
+  "description": "Top One Code theme for WordPress",
+  "author": "Sean Davis",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-pot": "^0.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

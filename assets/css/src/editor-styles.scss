@@ -1,0 +1,157 @@
+// Normalize the editor too
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+
+// Default editor styles. The editor DOES NOT inherit theme Customizer styles, unfortunately.
+:root {
+	--body: #002959;
+	--subdued-body: #315b82;
+	--lightest: #f7f9fc;
+	--darkest: #002959;
+	--action: #00bca9;
+	--subdued-action: #002959;
+}
+
+// Make Sass variables available for editor stylesheets
+@import "_variables";
+@import "_colors";
+
+// Make Sass mixins available for editor stylesheets
+@import "_mixins";
+
+// Keep some front-end styles consistent in editor
+@import "_typography";
+@import "_forms";
+@import "_blocks";
+
+/**
+ * These styles are applied to the editor, separate from front-end styles.
+ */
+body {
+
+	* {
+		box-sizing: border-box;
+	}
+
+	/* The post title - let's visually separate it from the post_content */
+	.edit-post-visual-editor__post-title-wrapper {
+		border-bottom: 1px solid var(--lightest);
+		margin-bottom: 2rem;
+		padding-bottom: 3rem;
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
+	/* All user-generated post_content */
+	.wp-block-post-content {
+
+		/* Top-level blocks in the post content */
+		& > [class*="wp-block-"] {
+
+			/* Layout related top-level blocks get Bootstrap .container styles */
+			& > [class*="__inner-container"] {
+				@include block-page-section-inner-container;
+			}
+
+			/**
+			 * Vertical padding header classes top-level blocks
+			 */
+			&.tiny {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__tiny;
+				}
+			}
+			&.small {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__small;
+				}
+			}
+			&.medium {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__medium;
+				}
+			}
+			&.large {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__large;
+				}
+			}
+			&.huge {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__huge;
+				}
+			}
+			&.no-spacing {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__no-spacing;
+				}
+			}
+		}
+	}
+
+	/* Core block: Group */
+	.wp-block-group {
+
+		&.is-layout-constrained {
+
+			/* Group type: page-header */
+			&.page-header {
+
+				& > .wp-block-group__inner-container {
+
+					.wp-block-buttons {
+						margin: 1rem 0;
+
+						@media all and (min-width: 768px) {
+							margin: 2rem 0;
+						}
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* Core block: Search */
+	.wp-block-search {
+
+		.wp-block-search__input {
+			width: unset;
+		}
+	}
+
+	/* Core block: Button */
+	.wp-block-button {
+
+		.wp-block-button__link {
+			border-radius: 2px;
+		}
+	}
+
+	/**
+	 * Markup & formatting tweaks
+	 */
+
+	@include heading-font-reduced;
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		font-weight: 700;
+	}
+}

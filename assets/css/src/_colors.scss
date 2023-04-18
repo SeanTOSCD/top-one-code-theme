@@ -1,0 +1,74 @@
+:root {
+	--white: #fff;
+	--transulent-light: rgba(255,255,255,.15);
+	--transulent-dark: rgba(0,0,0,.15);
+}
+
+body {
+	color: var(--body);
+}
+
+/* White */
+.has-white-color {
+	color: #fff;
+}
+
+.has-white-background-color {
+	background-color: #fff;
+}
+
+/* Body */
+.has-body-color {
+	color: var(--body);
+}
+
+.has-body-background-color {
+	background-color: var(--body);
+}
+
+/* Body - Subdued */
+.has-subdued-body-color {
+	color: var(--subdued-body);
+}
+
+.has-subdued-body-background-color {
+	background-color: var(--subdued-body);
+}
+
+/* Lightest */
+.has-the-lightest-color {
+	color: var(--lightest);
+}
+
+.background-lightest,
+.has-the-lightest-background-color {
+	background-color: var(--lightest);
+}
+
+/* Darkest */
+.has-the-darkest-color {
+	color: var(--darkest);
+}
+
+.has-the-darkest-background-color {
+	background-color: var(--darkest);
+}
+
+/* Action */
+.has-action-color {
+	color: var(--action);
+}
+
+.has-action-background-color {
+	background-color: var(--action);
+}
+
+/* Translucent - Light */
+.has-translucent-light-background-color {
+	background-color: rgba(255,255,255,.15);
+}
+
+/* Translucent - Dark */
+.has-translucent-dark-background-color {
+	background-color: rgba(0,0,0,.15);
+}

@@ -1,0 +1,169 @@
+/**
+ * Core block styles - both front-end and editor
+ */
+.wp-block-heading {
+
+	/* Font Awesome */
+	[class*="fa-"] {
+		color: var(--action);
+		display: inline-block;
+		margin-right: 8px;
+	}
+}
+
+.wp-block-quote,
+.wp-block-quote-editor {
+	background-color: var(--lightest);
+	color: var(--subdued-body);
+	font-size: 95%;
+	font-weight: 500;
+	padding: 1.5rem;
+
+	@media all and (min-width: 768px) {
+		padding: 2rem;
+	}
+
+	p {
+		font-size: 90%;
+
+		&:last-of-type {
+			margin-bottom: .5rem;
+		}
+	}
+
+	cite {
+		font-size: 80%;
+		font-weight: 400;
+
+		&:before {
+			content: '— ';
+		}
+	}
+}
+
+.wp-block-pullquote,
+.wp-block-pullquote-editor {
+	background-color: var(--lightest);
+
+	blockquote {
+		color: var(--subdued-body);
+
+		p {
+			color: var(--body);
+			font-size: 115%;
+			font-weight: 600;
+
+			&:last-of-type {
+				margin-bottom: .5rem;
+			}
+		}
+
+		cite {
+			font-size: 80%;
+
+			&:before {
+				content: '— ';
+			}
+		}
+	}
+}
+
+.wp-block-code,
+.wp-block-code-editor,
+.wp-block-preformatted,
+.wp-block-preformatted-editor {
+	font-size: 80%;
+}
+
+.wp-block-table,
+.wp-block-table-editor {
+
+	.wp-element-caption {
+		padding-top: 10px;
+	}
+}
+
+.wp-block-gallery,
+.wp-block-gallery-editor {
+
+	&.has-background {
+		padding: 1rem;
+	}
+}
+
+.wp-block-audio,
+.wp-block-audio-editor {
+	background-color: var(--lightest);
+	padding: 1.5rem 1.25rem 1rem;
+}
+
+.wp-block-file,
+.wp-block-file-editor {
+	background-color: var(--lightest);
+	padding: 1.5rem;
+	text-align: center;
+
+	.wp-block-file__button {
+		display: inline-block;
+	}
+}
+
+.wp-block-table-of-contents,
+.wp-block-table-of-contents-editor {
+	background-color: var(--lightest);
+	font-size: 85%;
+	padding: 2rem;
+
+	&.alignright {
+
+		@media all and (min-width: 768px) {
+			margin-left: 2.5rem;
+		}
+	}
+
+	&.alignleft {
+
+		@media all and (min-width: 768px) {
+			margin-right: 2.5rem;
+		}
+	}
+
+	& > ol {
+		margin-left: 0;
+	}
+
+	ol {
+		margin-bottom: 0;
+
+		ol,
+		ul {
+			padding-left: 1rem;
+		}
+	}
+
+	a {
+		color: var(--subdued-action);
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: var(--body);
+		}
+	}
+}
+
+.wp-block-search,
+.wp-block-search-editor {
+
+	.wp-block-search__inside-wrapper {
+		background-color: var(--lightest);
+		border: none;
+		padding: 8px;
+	}
+}
+
+.wp-block-preformatted,
+.wp-block-preformatted-editor {
+	background-color: var(--lightest);
+	padding: 1.5rem;
+}
