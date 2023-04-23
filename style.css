@@ -9324,15 +9324,15 @@ section[class*="-section"] .section-header {
     text-transform: none; }
 
 .huge-heading {
-  font-size: 36px !important;
+  font-size: 34px !important;
   line-height: 1.138888889; }
   @media all and (min-width: 768px) {
     .huge-heading {
-      font-size: 50px !important; } }
-  @media all and (min-width: 992px) {
+      font-size: 46px !important; } }
+  @media all and (min-width: 1200px) {
     .huge-heading {
       font-size: 65px !important; } }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1400px) {
     .huge-heading {
       font-size: 80px !important; } }
 

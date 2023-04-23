@@ -1,16 +1,16 @@
 .huge-heading {
-	font-size: 36px !important;
+	font-size: 34px !important;
 	line-height: 1.138888889;
 
 	@media all and (min-width: 768px) {
-		font-size: 50px !important;
-	}
-
-	@media all and (min-width: 992px) {
-		font-size: 65px !important;
+		font-size: 46px !important;
 	}
 
 	@media all and (min-width: 1200px) {
+		font-size: 65px !important;
+	}
+
+	@media all and (min-width: 1400px) {
 		font-size: 80px !important;
 	}
 }
