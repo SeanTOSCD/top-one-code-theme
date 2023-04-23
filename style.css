@@ -9356,6 +9356,7 @@ section[class*="-section"] .section-header {
   z-index: 10; }
   .highlight-text::after {
     background-color: #ff5844 !important;
+    display: none;
     position: absolute;
     left: 0;
     bottom: 15%;
@@ -9364,6 +9365,9 @@ section[class*="-section"] .section-header {
     content: "";
     height: 6px;
     z-index: -10; }
+    @media all and (min-width: 576px) {
+      .highlight-text::after {
+        display: block; } }
     @media all and (min-width: 700px) {
       .highlight-text::after {
         border-radius: 3px;
