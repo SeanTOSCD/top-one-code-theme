@@ -3,6 +3,8 @@
  * Theme functions and definitions
  */
 
+
+
 const THEME_VERSION = '1.0.6';
 
 define( 'THEME_URI', get_home_url() );
