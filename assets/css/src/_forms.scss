@@ -107,4 +107,11 @@ select {
 	button.wpforms-submit {
 		width: 100% !important;
 	}
+
+	.wpforms-recaptcha-container {
+
+		& + .wpforms-submit-container {
+			margin-top: 1.25rem;
+		}
+	}
 }

@@ -10191,6 +10191,9 @@ select:focus {
 .entry-content button.wpforms-submit {
   width: 100% !important;
 }
+.entry-content .wpforms-recaptcha-container + .wpforms-submit-container {
+  margin-top: 1.25rem;
+}
 
 /**
  * Core block styles - both front-end and editor
